@@ -1,8 +1,56 @@
 {% extends "base.html" %}
 
-{% block title %}Home | Docker Flask{% endblock %}
+{% block title %}First Docker Container{% endblock %}
 
 {% block content %}
-    <h2>Project Scaled Successfully 🚀</h2>
-    <p>Your Flask app now uses a base layout with header and footer.</p>
+<section class="py-20">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+
+        <div class="flex justify-center mb-6">
+            <i class="fa-brands fa-docker text-blue-600 text-7xl"></i>
+        </div>
+
+        <h2 class="text-4xl font-bold mb-4">
+            My First Docker Container 🚀
+        </h2>
+
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-10">
+            This Flask application is fully containerized using Docker.
+            It runs consistently across environments and follows real-world
+            project structure and best practices.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+
+            <div class="bg-white shadow rounded-lg p-6">
+                <i class="fa-solid fa-box text-blue-500 text-3xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Docker Image</h3>
+                <p class="text-gray-600">
+                    Built using an official Python base image with a clean and
+                    optimized Dockerfile.
+                </p>
+            </div>
+
+            <div class="bg-white shadow rounded-lg p-6">
+                <i class="fa-solid fa-rocket text-green-500 text-3xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Fast & Portable</h3>
+                <p class="text-gray-600">
+                    Run anywhere with the same behavior — no “works on my machine”
+                    problems.
+                </p>
+            </div>
+
+            <div class="bg-white shadow rounded-lg p-6">
+                <i class="fa-solid fa-code text-purple-500 text-3xl mb-4"></i>
+                <h3 class="text-xl font-semibold mb-2">Developer Friendly</h3>
+                <p class="text-gray-600">
+                    Clean Flask structure with templates, static assets,
+                    and scalable design.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
 {% endblock %}
