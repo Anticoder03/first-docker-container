@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+
+{% block title %}My Docker Journey{% endblock %}
+
+{% block content %}
+<section class="py-20 bg-gray-50">
+    <div class="max-w-5xl mx-auto px-6">
+
+        <!-- Header -->
+        <div class="text-center mb-16">
+            <i class="fa-solid fa-road text-blue-600 text-6xl mb-4"></i>
+            <h2 class="text-4xl font-bold mb-4">My Journey to My First Docker Container</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                This page documents my step-by-step journey of learning Docker
+                by building a real Python + Flask application in a progressive,
+                hands-on manner.
+            </p>
+        </div>
+
+        <!-- Timeline -->
+        <div class="relative border-l-4 border-blue-500 pl-8 space-y-12">
+
+            <!-- Step 1 -->
+            <div class="relative">
+                <span class="absolute -left-11 top-1 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-folder-open"></i>
+                </span>
+                <h3 class="text-2xl font-semibold mb-2">Project Initialization</h3>
+                <p class="text-gray-600">
+                    Started with a clean and scalable project structure.
+                    Created separate folders for application code, templates,
+                    static assets, and Docker configuration.
+                </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="relative">
+                <span class="absolute -left-11 top-1 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                    <i class="fa-brands fa-python"></i>
+                </span>
+                <h3 class="text-2xl font-semibold mb-2">Flask Application Setup</h3>
+                <p class="text-gray-600">
+                    Built a simple Flask application with routing, template inheritance,
+                    and health check endpoints to ensure the app responds correctly.
+                </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="relative">
+                <span class="absolute -left-11 top-1 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                    <i class="fa-brands fa-docker"></i>
+                </span>
+                <h3 class="text-2xl font-semibold mb-2">Dockerization</h3>
+                <p class="text-gray-600">
+                    Created a Dockerfile using an official Python base image.
+                    Installed dependencies, copied application code, and exposed
+                    the required port to run the Flask app inside a container.
+                </p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="relative">
+                <span class="absolute -left-11 top-1 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-layer-group"></i>
+                </span>
+                <h3 class="text-2xl font-semibold mb-2">Scaling with Templates & Layout</h3>
+                <p class="text-gray-600">
+                    Introduced a base layout with reusable header and footer.
+                    Added multiple pages such as Home, Health, and Journey
+                    using template inheritance.
+                </p>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="relative">
+                <span class="absolute -left-11 top-1 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </span>
+                <h3 class="text-2xl font-semibold mb-2">UI Enhancement</h3>
+                <p class="text-gray-600">
+                    Enhanced the user interface using Tailwind CSS and Font Awesome.
+                    Focused on clarity, responsiveness, and clean design rather
+                    than unnecessary complexity.
+                </p>
+            </div>
+
+            <!-- Step 6 -->
+            <div class="relative">
+                <span class="absolute -left-11 top-1 w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center">
+                    <i class="fa-solid fa-flag-checkered"></i>
+                </span>
+                <h3 class="text-2xl font-semibold mb-2">Result & Learnings</h3>
+                <p class="text-gray-600">
+                    Successfully built and ran my first Docker container.
+                    Gained a clear understanding of images, containers, Dockerfiles,
+                    and real-world development workflows.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+{% endblock %}
